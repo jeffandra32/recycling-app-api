@@ -9,7 +9,7 @@ const itemsControllers = new ItemsControllers();
 // Items
 routes.get('/items', itemsControllers.index);
 
-// Poins
+// Points
 routes.post('/points', pointsController.create);
 routes.get('/points', pointsController.index);
 routes.get('/points/:id', pointsController.show);
