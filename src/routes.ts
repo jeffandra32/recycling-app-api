@@ -1,4 +1,4 @@
-import ItemsControllers from './controllers/itemsController';
+import ItemsControllers from './controllers/ItemsController';
 import PointsController from './controllers/PointsController';
 import express from 'express';
 
@@ -7,7 +7,7 @@ const pointsController = new PointsController();
 const itemsControllers = new ItemsControllers();
 
 // Items
-routes.get('/items', itemsControllers.index)
+routes.get('/items', itemsControllers.index);
 
 // Poins
 routes.post('/points', pointsController.create);
